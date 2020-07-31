@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「乃木坂工事中」熟肉数据可视化</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #ecf0f1;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: purple;
+            margin-top: 10px;
+        }
+
+        #chart1,
+        #chart2 {
+            margin: 30px;
+        }
+
+        .fix {
+            width: 30px;
+            height: 200px;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            position: fixed;
+            writing-mode: vertical-lr;
+        }
+
+        .fix-erika {
+            top: 0px;
+            right: 40px;
+            background: #fed330;
+        }
+
+        .fix-sayuri {
+            bottom: 0px;
+            left: 40px;
+            background: #e74c3c;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <a href="https://weibo.com/u/3184350444" target="_black">weibo: 牛衣古柳DX</a>
+        <div id="chart1"></div>
+        <div id="chart2"></div>
+        <div class="fix fix-erika">生田絵梨花参上</div>
+        <div class="fix fix-sayuri">さゆりんごパンチ</div>
+    </div>
+    <script src="d3.js"></script>
+    <script src="d3-annotation.js"></script>
+    <script src='app.js'></script>
+</body>
+
+</html>
